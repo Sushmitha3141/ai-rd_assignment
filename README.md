@@ -74,3 +74,22 @@ Total Error         : 457.3466
 Average Error/Point : 0.3049
 Max L1 Error         : 1.1836
 ```
+
+### Final Equation (Desmos / LaTeX format)
+
+\left(t\cdot\cos\left(0.5252\right)-e^{0.0299\left|t\right|}\cdot\sin\left(0.3t\right)\cdot\sin\left(0.5252\right)+55.0146,42+t\cdot\sin\left(0.5252\right)+e^{0.0299\left|t\right|}\cdot\sin\left(0.3t\right)\cdot\cos\left(0.5252\right)\right)
+
+Verified visually here: https://www.desmos.com/calculator/y1hw3tokpo
+
+## Files in this repo
+
+- `xy_data.csv` — provided dataset
+- `curve_fit.py` — data loading, visualization, model, fitting, and validation
+- `scatter.png` — final plot of fitted curve vs. real data
+
+## Running it
+
+\`\`\`bash
+pip install numpy pandas scipy matplotlib
+python curve_fit.py
+\`\`\`
